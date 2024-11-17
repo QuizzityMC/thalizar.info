@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-image: url('thalizar.png');
     background-size: cover;
+    background-position: center;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -17,6 +19,7 @@ body {
     padding: 20px;
     text-align: center;
     max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 header, footer {
@@ -40,11 +43,45 @@ main {
     margin-bottom: 20px;
 }
 
+h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 a {
     color: #ffb400;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 a:hover {
+    color: #ffd700;
     text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
