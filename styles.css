@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('thalizar.png');
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+}
+
+header, footer {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+header h1, footer {
+    margin: 0;
+}
+
+main {
+    background-color: #444;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.intro, .attractions, .contact {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #ffb400;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
